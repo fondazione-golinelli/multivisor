@@ -82,7 +82,7 @@ def print_processes_status(status, *args):
 def cmd(f=None, name=None):
     if f is None:
         return functools.partial(cmd, name=name)
-    f.__cmd__ = (name or f.__name__).decode()
+    f.__cmd__ = (name or f.__name__)
     return f
 
 

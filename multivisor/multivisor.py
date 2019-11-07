@@ -5,7 +5,7 @@ import json
 import time
 import logging
 import weakref
-from ConfigParser import SafeConfigParser
+from configparser import SafeConfigParser
 
 import louie
 import zerorpc
